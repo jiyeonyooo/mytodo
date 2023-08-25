@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.insert {
+    font-family: 'Dovemayo_gothic';
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.insert > button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+}
