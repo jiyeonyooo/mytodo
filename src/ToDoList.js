@@ -1,13 +1,13 @@
 import './ToDoList.css';
 import ToDoItem from './ToDoItem.js';
 
-const ToDoList = () => {
+const ToDoList = ({todos, onRemove, onToggle}) => {
     return (
         <div>
             <div className='list'>
-                <ToDoItem/>
-                <ToDoItem/>
-                <ToDoItem/>
+                {todos.map (todo=>(<ToDoItem todo={todo} key={todo.id} 
+                onRemove={onRemove}
+                onToggle={onToggle} />))}
             </div>
         </div>
     );

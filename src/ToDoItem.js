@@ -1,11 +1,22 @@
 import './ToDoItem.css';
+import {MdRadioButtonUnchecked, MdRadioButtonChecked, MdHighlightOff} from 'react-icons/md';
 
-const ToDoItem = () => {
+const ToDoItem = ( {todo, onRemove, onToggle}) => {
+    const checkk = 0;
+    const buttonChange = (checkk) => {
+        checkk += 1;
+    }
+    const {id, text, checked} = todo;
     return (
         <div className="ToDoItem">
-            <button className="checkbox"></button>
-            <div className="text">방청소하기</div>
-            <button className="remove">-</button>
+            <div className="checkbox" onClick={(checkk)=>buttonChange(checkk)}>
+                {checkk === 0 ? <MdRadioButtonChecked/>: <MdRadioButtonUnchecked />}
+            </div>
+            <div className="text">{text}</div>
+            <div className="remove" 
+            onClick={()=>onRemove(id)}>
+                <MdHighlightOff/>
+            </div>
         </div>
     );
 };
