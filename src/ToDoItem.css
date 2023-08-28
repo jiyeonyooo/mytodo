@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Dovemayo_gothic';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -11,26 +11,28 @@
     display: flex;
     justify-content:start;
     align-items: center;
-    font-family: 'Dovemayo_gothic';
+    font-family: 'LINESeedKR-Bd';
     font-size: 20px;
 }
 
 .checkbox {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
-    width: 380px;
+    width: 400px;
 }
 
 .remove {
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: tomato;
 }
 

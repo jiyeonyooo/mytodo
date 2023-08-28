@@ -1,5 +1,7 @@
 import './ToDoItem.css';
 import {MdRadioButtonUnchecked, MdRadioButtonChecked, MdHighlightOff} from 'react-icons/md';
+import {BsPatchCheckFill} from 'react-icons/bs';
+import {BiMinusCircle} from 'react-icons/bi';
 
 const ToDoItem = ( {todo, onRemove, onToggle}) => {
     
@@ -7,12 +9,12 @@ const ToDoItem = ( {todo, onRemove, onToggle}) => {
     return (
         <div className="ToDoItem">
             <div className="checkbox" onClick={()=>onToggle(id)}>
-                {checked === true ? <MdRadioButtonChecked/>: <MdRadioButtonUnchecked />}
+                {checked === true ? <BsPatchCheckFill/> : <MdRadioButtonUnchecked />}
             </div>
             <div className="text">{text}</div>
             <div className="remove" 
             onClick={()=>onRemove(id)}>
-                <MdHighlightOff/>
+                <BiMinusCircle/>
             </div>
         </div>
     );

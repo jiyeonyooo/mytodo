@@ -55,12 +55,12 @@ const App = () => {
   );
 
   return (
-    <div>
-      <ToDoTemplate>
-        <ToDoList todos={todos} onRemove={onRemove} onToggle={onToggle}/>
-        <ToDoInsert onInsert={onInsert}/>
-      </ToDoTemplate>
-    </div>
+      <div>
+        <ToDoTemplate>
+          <ToDoList todos={todos} onRemove={onRemove} onToggle={onToggle}/>
+          <ToDoInsert onInsert={onInsert}/>
+        </ToDoTemplate>
+      </div>
   );
 };
 

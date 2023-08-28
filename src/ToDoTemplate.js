@@ -3,8 +3,14 @@ import './ToDoTemplate.css'
 const ToDoTemplate = ({children}) => {
     return (
         <div className='frame'>
-            <div className='title'>지연이의 투두리스트</div>
-            <div className="content">{children}</div>
+            <div className="todoTitle">MUST TO DO</div>
+            <div className="grid">
+                <div className="todoPart">
+                    <div className="content">{children}</div>
+                </div>
+                <div className="datePart"></div>
+                <div className="untitlePart"></div>
+            </div>
         </div>
     );
 };
