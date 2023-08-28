@@ -9,12 +9,13 @@ const ToDoItem = ( {todo, onRemove, onToggle}) => {
     return (
         <div className="ToDoItem">
             <div className="checkbox" onClick={()=>onToggle(id)}>
-                {checked === true ? <BsPatchCheckFill/> : <MdRadioButtonUnchecked />}
+                {checked === true ? <BsPatchCheckFill color="rgba(93,52,236,1)"/> 
+                : <MdRadioButtonUnchecked color="rgba(93,52,236,1)"/>}
             </div>
             <div className="text">{text}</div>
             <div className="remove" 
             onClick={()=>onRemove(id)}>
-                <BiMinusCircle/>
+                -
             </div>
         </div>
     );
