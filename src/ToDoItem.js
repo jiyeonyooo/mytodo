@@ -1,7 +1,6 @@
 import './ToDoItem.css';
-import {MdRadioButtonUnchecked, MdRadioButtonChecked, MdHighlightOff} from 'react-icons/md';
+import {MdRadioButtonUnchecked} from 'react-icons/md';
 import {BsPatchCheckFill} from 'react-icons/bs';
-import {BiMinusCircle} from 'react-icons/bi';
 
 const ToDoItem = ( {todo, onRemove, onToggle}) => {
     
