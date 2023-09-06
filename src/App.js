@@ -60,6 +60,7 @@ const App = () => {
           <ToDoList todos={todos} onRemove={onRemove} onToggle={onToggle}/>
           <ToDoInsert onInsert={onInsert}/>
         </ToDoTemplate>
+        <div className="copyright">@yeonjiyooo_</div>
       </div>
   );
 };

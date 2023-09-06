@@ -1,5 +1,5 @@
 import './ToDoTemplate.css'
-import FindDate from './FindDate.js';
+import Calendar from './calendar/calendar.js';
 
 const ToDoTemplate = ({children}) => {
     return (
@@ -9,7 +9,7 @@ const ToDoTemplate = ({children}) => {
                 <div className="todoPart">
                     <div className="content">{children}</div>
                 </div>
-                <div className="datePart"><FindDate/></div>
+                <div className="datePart">{Calendar}</div>
                 <div className="untitlePart"></div>
             </div>
         </div>
