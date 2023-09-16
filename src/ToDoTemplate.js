@@ -9,7 +9,9 @@ const ToDoTemplate = ({children}) => {
                 <div className="todoPart">
                     <div className="content">{children}</div>
                 </div>
-                <div className="datePart">{Calendar}</div>
+                <div className="datePart">
+                    <Calendar></Calendar>
+                </div>
                 <div className="untitlePart"></div>
             </div>
         </div>
