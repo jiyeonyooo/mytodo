@@ -6,19 +6,19 @@ const Calendar = () => {
     const [currentMonth, setcurrentMonth] = useState(new Date());
 
     const pre = () => {
-        setcurrentMonth(new Date());
+        setcurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth()-1));
     }
 
     const post = () => {
-        setcurrentMonth(currentMonth.getMonth()+1+1);
+        setcurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth()+1));
     }
     
     return (
         <div className="calendar">
             <div className='calendarNav'>
-                <button onClick={pre}>전</button>
+                <button onClick={pre}>&lt;</button>
                 <span>{currentMonth.getFullYear()}년 {currentMonth.getMonth()+1}월</span>
-                <button onClick={post}>후</button>
+                <button onClick={post}>&gt;</button>
             </div>
             <table>
                 <thead>
