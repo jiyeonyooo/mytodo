@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { IoMdArrowRoundBack, IoMdArrowRoundForward } from 'react-icons/io'
 import './calendar.css';
 
 const Calendar = () => {
@@ -74,6 +75,13 @@ const Calendar = () => {
                     </td>
                 );
             }
+            if (day.getDate() === new Date().getDate() && day.getDay() === new Date().getDay()) {
+                return (
+                    <td key={i} className="today">
+                        {day.getDate()}
+                    </td>
+                );
+            }
             return (
                 <td key={i} className="currentMonthDays">
                     {day.getDate()}
@@ -101,9 +109,9 @@ const Calendar = () => {
     return (
         <div className="calendar">
             <div className='calendarNav'>
-                <button onClick={pre}>&lt;</button>
-                <span>{currentMonth.getFullYear()}년 {currentMonth.getMonth() + 1}월</span>
-                <button onClick={post}>&gt;</button>
+                <IoMdArrowRoundBack onClick={pre} className='calendarButton' />
+                <span className='yearAndMonth'>{currentMonth.getFullYear()}년 {currentMonth.getMonth() + 1}월</span>
+                <IoMdArrowRoundForward onClick={post} className='calendarButton' />
             </div>
             <table>
                 <thead>

@@ -50,6 +50,7 @@
 }
 
 .datePart {
+    padding-bottom: 10px;
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2) inset;
@@ -59,4 +60,12 @@
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+.preMonthDays {
+    color:rgba(102, 102, 102, 0.5)
+}
+
+.nextMonthDays {
+    color:rgba(102, 102, 102, 0.5)
 }
