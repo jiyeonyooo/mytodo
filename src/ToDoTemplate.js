@@ -3,7 +3,7 @@ import Calendar from './calendar/calendar.js';
 import { BiSolidStar } from 'react-icons/bi';
 import Gauge from './gauge/gauge.js'
 
-const ToDoTemplate = ({ children }) => {
+const ToDoTemplate = ({ children, todos }) => {
     return (
         <div className='frame'>
             <div className="todoTitle">MY TO DO</div>
@@ -20,7 +20,7 @@ const ToDoTemplate = ({ children }) => {
                         <h2>오늘의 성취도</h2>
                         <BiSolidStar className="achievementStar" />
                     </div>
-                    <Gauge></Gauge>
+                    <Gauge todos={todos}></Gauge>
                 </div>
             </div>
         </div>

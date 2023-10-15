@@ -1,12 +1,23 @@
 import './gauge.css';
 
-const Gauge = () => {
+const Gauge = ({ todos }) => {
+    let percentage;
+    if (todos.length === 0) percentage = 0;
+    else {
+        const achieveTodos = todos.filter((state) => {
+            return state.checked === true;
+        })
+        console.log(achieveTodos);
+        percentage = achieveTodos.length / todos.length * 100;
+    }
+    const roundPercentage = Math.round(percentage);
+    console.log(roundPercentage);
 
     return (
         <div className="gauge-body">
             <div className="gauge-fill"></div>
             <div className="gauge-arc">
-                <div className="percentage">nn%</div>
+                <div className="percentage">{roundPercentage}%</div>
             </div>
         </div>
     );
