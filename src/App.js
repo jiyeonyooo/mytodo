@@ -40,28 +40,28 @@ const App = () => {
 
   const onRemove = useCallback(
     id => {
-      setTodos(todos.filter(todo=>todo.id!==id));
+      setTodos(todos.filter(todo => todo.id !== id));
     }, [todos],
   );
 
   const onToggle = useCallback(
-    id =>{
+    id => {
       setTodos(
-        todos.map(todo=>
-          todo.id === id ? {...todo, checked: !todo.checked} : todo,),
+        todos.map(todo =>
+          todo.id === id ? { ...todo, checked: !todo.checked } : todo,),
       );
       console.log(todos);
     }, [todos],
   );
 
   return (
-      <div>
-        <ToDoTemplate>
-          <ToDoList todos={todos} onRemove={onRemove} onToggle={onToggle}/>
-          <ToDoInsert onInsert={onInsert}/>
-        </ToDoTemplate>
-        <div className="copyright">@yeonjiyooo_</div>
-      </div>
+    <div>
+      <ToDoTemplate>
+        <ToDoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
+        <ToDoInsert onInsert={onInsert} />
+      </ToDoTemplate>
+      <div className="copyright">@yeonjiyooo_</div>
+    </div>
   );
 };
 

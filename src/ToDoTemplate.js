@@ -1,5 +1,7 @@
 import './ToDoTemplate.css'
 import Calendar from './calendar/calendar.js';
+import { BiSolidStar } from 'react-icons/bi';
+import Gauge from './gauge/gauge.js'
 
 const ToDoTemplate = ({ children }) => {
     return (
@@ -12,7 +14,14 @@ const ToDoTemplate = ({ children }) => {
                 <div className="datePart">
                     <Calendar></Calendar>
                 </div>
-                <div className="untitlePart"></div>
+                <div className="achievementPart">
+                    <div className="achievementHead">
+                        <BiSolidStar className="achievementStar" />
+                        <h2>오늘의 성취도</h2>
+                        <BiSolidStar className="achievementStar" />
+                    </div>
+                    <Gauge></Gauge>
+                </div>
             </div>
         </div>
     );

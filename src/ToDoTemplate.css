@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 .frame {
 
     margin-right: auto;
@@ -56,10 +63,29 @@
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2) inset;
 }
 
-.untitlePart {
+.achievementPart {
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2) inset;
+    font-family: 'LINESeedKR-Bd';
+
+}
+
+.achievementHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+}
+
+.achievementHead > h2 {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.achievementStar {
+    color: rgb(93, 52, 236);
 }
 
 .preMonthDays {
