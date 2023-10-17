@@ -1,3 +1,7 @@
+:root {
+    --rotateDeg: 30deg;
+}
+
 .gauge-body {
     background-color: rgb(208, 212, 202, 0.4);
     width: 250px;
@@ -28,6 +32,12 @@
     font-size: 25px;
 }
 
+@keyframes fillGauge {
+    100% {
+        transform: rotate(var(--rotateDeg));
+    }
+    
+}
 
 .gauge-fill {
     position:absolute; 
@@ -35,5 +45,9 @@
     width:100%; 
     height:100%; 
     background-image: linear-gradient( 109.6deg, rgba(62,161,219,1) 11.2%, rgba(93,52,236,1)); 
-    transform-origin:top center; 
+    transform-origin: top center;
+
+    animation-name: fillGauge;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
