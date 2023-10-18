@@ -6,7 +6,16 @@ import Gauge from './gauge/gauge.js'
 const ToDoTemplate = ({ children, todos }) => {
     return (
         <div className='frame'>
-            <div className="todoTitle">MY TO DO</div>
+            <div className="todoTitle">
+                <span>M</span>
+                <span>Y</span>
+                <span>&nbsp;</span>
+                <span>T</span>
+                <span>O</span>
+                <span>&nbsp;</span>
+                <span>D</span>
+                <span>O</span>
+            </div>
             <div className="grid">
                 <div className="todoPart">
                     <div className="content">{children}</div>

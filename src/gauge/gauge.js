@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './gauge.css';
 
 const Gauge = ({ todos }) => {

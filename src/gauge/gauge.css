@@ -22,6 +22,7 @@
     height: 62.5px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
     border-radius: 62.5px 62.5px 0 0;
     display: flex;
     justify-content: center;
