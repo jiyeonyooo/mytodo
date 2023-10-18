@@ -5,23 +5,11 @@ import ToDoList from './ToDoList.js';
 import ToDoInsert from './ToDoInsert.js';
 
 const App = () => {
-  const [todos, setTodos] = useState([
-    {
-      id: 1,
-      text: '방청소하기',
-      checked: true,
-    },
-    {
-      id: 2,
-      text: '운동하기',
-      checked: true,
-    },
-    {
-      id: 3,
-      text: '리액트 공부하기',
-      checked: false,
-    },
-  ]);
+  const [todos, setTodos] = useState([{
+    id: 0,
+    text: '오늘 하루도 파이팅 🔥',
+    checked: false,
+  },]);
 
   const nextId = useRef(4);
 
